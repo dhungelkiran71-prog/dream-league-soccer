@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream League Soccer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚽ Dream League Soccer</h1>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="info-panel">
+            <div class="team-info">
+                <div class="team team-home">
+                    <h2 id="homeTeam">Home Team</h2>
+                    <p>Score: <span id="homeScore">0</span></p>
+                </div>
+                <div class="vs">VS</div>
+                <div class="team team-away">
+                    <h2 id="awayTeam">Away Team</h2>
+                    <p>Score: <span id="awayScore">0</span></p>
+                </div>
+            </div>
+            <div class="timer">
+                <p>Time: <span id="timer">00:00</span></p>
+            </div>
+            <div class="controls">
+                <button id="startBtn">Start Match</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
